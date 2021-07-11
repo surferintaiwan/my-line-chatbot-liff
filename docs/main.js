@@ -225,8 +225,10 @@ class RegisterPetComponent {
                 return;
             }
             console.log(444);
-            console.log(_line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.getDecodedIDToken());
-            console.log(_line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.getProfile());
+            const decodedIDToken = _line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.getDecodedIDToken();
+            const profile = yield _line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.getProfile();
+            console.log(decodedIDToken);
+            console.log(profile);
             // if(liff.isLoggedIn) {
             //   liff.getDecodedIDToken
             // }
