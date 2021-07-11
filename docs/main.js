@@ -217,6 +217,14 @@ class RegisterPetComponent {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
             yield _line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.init({ liffId: '1656200570-d1bB32n8' });
             console.log(_line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.isLoggedIn());
+            console.log(111);
+            if (!_line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.isLoggedIn()) {
+                console.log(222);
+                _line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.login();
+                console.log(333);
+                return;
+            }
+            console.log(444);
             console.log(_line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.getDecodedIDToken());
             console.log(_line_liff__WEBPACK_IMPORTED_MODULE_2___default.a.getProfile());
             // if(liff.isLoggedIn) {
